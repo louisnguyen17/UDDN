@@ -3,9 +3,92 @@
     ViewData["Title"] = "Danh sách sản phẩm";
 }
 
-<div class="container mt-4">
-    <h2 class="mb-3 text-center">Danh sách sản phẩm</h2>
-    <a class="btn btn-primary mb-3" asp-action="Create">+ Thêm sản phẩm</a>
+<style>
+    .product-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background-color: #f8f9fa;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-container h2 {
+        color: #0d6efd;
+        margin-bottom: 20px;
+    }
+
+    .btn-create {
+        background-color: #198754;
+        border-color: #198754;
+    }
+
+    .btn-create:hover {
+        background-color: #145c36;
+        border-color: #145c36;
+    }
+
+    table {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    thead.table-dark th {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+    }
+
+    tbody tr {
+        transition: background-color 0.2s;
+    }
+
+    tbody tr:hover {
+        background-color: #e9f5ff;
+    }
+
+    tbody td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .btn-info {
+        background-color: #0dcaf0;
+        border-color: #0dcaf0;
+        margin-right: 3px;
+    }
+
+    .btn-info:hover {
+        background-color: #31d2f2;
+        border-color: #31d2f2;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+        margin-right: 3px;
+    }
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #a71d2a;
+        border-color: #a71d2a;
+    }
+</style>
+
+<div class="product-container">
+    <h2 class="text-center">Danh sách sản phẩm</h2>
+    <a class="btn btn-create mb-3" asp-action="Create">+ Thêm sản phẩm</a>
 
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
@@ -15,7 +98,7 @@
                 <th>Giá</th>
                 <th>Tồn kho</th>
                 <th>Mô tả</th>
-                <th style="width:150px;">Hành động</th>
+                <th style="width:180px;">Hành động</th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +107,7 @@
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Name</td>
-                <td>@item.Price.ToString("N0")</td>
+                <td>@item.Price.ToString("N0") đ</td>
                 <td>@item.Stock</td>
                 <td>@item.Description</td>
                 <td>

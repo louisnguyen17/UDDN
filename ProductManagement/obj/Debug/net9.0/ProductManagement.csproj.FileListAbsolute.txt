@@ -919,3 +919,4 @@ C:\Users\Acer Nitro 5\Downloads\UDDN\ProductManagement\obj\Debug\net9.0\refint\P
 C:\Users\Acer Nitro 5\Downloads\UDDN\ProductManagement\obj\Debug\net9.0\ProductManagement.pdb
 C:\Users\Acer Nitro 5\Downloads\UDDN\ProductManagement\obj\Debug\net9.0\ProductManagement.genruntimeconfig.cache
 C:\Users\Acer Nitro 5\Downloads\UDDN\ProductManagement\obj\Debug\net9.0\ref\ProductManagement.dll
+C:\Users\Acer Nitro 5\Downloads\UDDN\ProductManagement\obj\Debug\net9.0\ProductManagement.sourcelink.json

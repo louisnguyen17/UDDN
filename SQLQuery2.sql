@@ -1,0 +1,4 @@
+CREATE DATABASE ProductDB;
+GO
+USE ProductDB;
+GO
